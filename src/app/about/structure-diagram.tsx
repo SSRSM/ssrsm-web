@@ -1,6 +1,6 @@
 'use client';
 
-import { Background, Controls, ReactFlow, ReactFlowProps } from '@xyflow/react';
+import { Background, BackgroundVariant, Controls, ReactFlow, ReactFlowProps } from '@xyflow/react';
 
 import '@xyflow/react/dist/style.css';
 
@@ -40,7 +40,7 @@ export function GeneralStructureDiagram() {
 			}}
 			nodesDraggable>
 			<Controls />
-			<Background variant="dots" gap={20} size={2} />
+			<Background variant={BackgroundVariant.Dots} gap={20} size={2} />
 		</ReactFlow>
 	);
 }
