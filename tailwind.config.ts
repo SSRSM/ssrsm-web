@@ -1,3 +1,4 @@
+import tailwindTypography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
@@ -64,17 +65,17 @@ const config: Config = {
 				'navbar': 'calc(3rem + 2*theme(spacing.3))',
 			},
 			backgroundImage: {
-				'hero': 'url("/assets/img/hero-bg.jpg")'
-			}
+				'hero': 'url("/assets/img/hero-bg.jpg")',
+			},
 		},
 		fontFamily: {
 			sans: ["var(--font-geist-sans)", "sans-serif"]
 		},
 		boxShadow: {
-			glow: '0 0 20px 3px hsl(var(--ring) / 0.5)'
+			glow: '0 0 15px 3px hsl(var(--ring) / 0.3)',
 		}
 	},
 
-	plugins: [tailwindcssAnimate],
+	plugins: [tailwindcssAnimate, tailwindTypography],
 };
 export default config;
